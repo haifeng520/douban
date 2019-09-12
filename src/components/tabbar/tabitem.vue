@@ -24,7 +24,6 @@ export default {
   },
   methods: {
     change() {
-      this.$emit('changeSelected', this.mark);
       this.$router.push('/' + this.mark);
     }
   }
@@ -36,7 +35,7 @@ export default {
   flex: 1;
   display: flex; // 转换块元素
   flex-direction: column;  // 垂直排列
-  align-items: center;
+  align-items: center;  // 水平居中
   img {
     width: 40px;
     height: 40px;
